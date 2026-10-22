@@ -1,0 +1,36 @@
+name: Native source compile only
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compile:
+    runs-on: windows-2022
+    timeout-minutes: 15
+    steps:
+      - name: Obtain exactly this public source revision
+        shell: pwsh
+        env:
+          SOURCE_REPOSITORY: ${{ github.repository }}
+          SOURCE_REVISION: ${{ github.sha }}
+        run: |
+          if ($env:SOURCE_REPOSITORY -notmatch '^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$') { throw 'Invalid repository identity' }
+          if ($env:SOURCE_REVISION -notmatch '^[0-9a-f]{40}$') { throw 'Invalid revision' }
+          git init source
+          if ($LASTEXITCODE -ne 0) { throw 'Source initialization failed' }
+          git -C source remote add origin "https://github.com/$env:SOURCE_REPOSITORY.git"
+          if ($LASTEXITCODE -ne 0) { throw 'Source remote failed' }
+          git -C source fetch --depth=1 origin $env:SOURCE_REVISION
+          if ($LASTEXITCODE -ne 0) { throw 'Exact source fetch failed' }
+          git -C source checkout --detach FETCH_HEAD
+          if ($LASTEXITCODE -ne 0) { throw 'Exact source checkout failed' }
+          $revision = git -C source rev-parse HEAD
+          if ($revision -ne $env:SOURCE_REVISION) { throw 'Revision mismatch' }
+      - name: Compile and link only
+        shell: pwsh
+        run: |
+          cmake -S source -B build -G "Visual Studio 17 2022" -A x64
+          if ($LASTEXITCODE -ne 0) { throw 'Configure failed' }
+          cmake --build build --config Release
+          if ($LASTEXITCODE -ne 0) { throw 'Compile failed' }
+      # Deliberately no native execution, game launch, signing or release upload.
