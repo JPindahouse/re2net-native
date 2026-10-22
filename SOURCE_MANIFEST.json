@@ -1,0 +1,133 @@
+{
+  "schema": 1,
+  "status": "OWNER_APPROVED_MIT_SOURCE_SNAPSHOT",
+  "baseline_revision": "R1525",
+  "sources": {
+    "core/src/door_core.cpp": {
+      "source_sha256": "24e61678347122bc7b39c88ed25b3b1784adb4e1d040e3116fdd8f224ab8f49a",
+      "staged_sha256": "24e61678347122bc7b39c88ed25b3b1784adb4e1d040e3116fdd8f224ab8f49a",
+      "modified": false
+    },
+    "core/src/messages.cpp": {
+      "source_sha256": "49f1e6b5b181f3ef13ef3deef00f3a95a8c5ef4b8d3fa5b76cd20482e007b97e",
+      "staged_sha256": "49f1e6b5b181f3ef13ef3deef00f3a95a8c5ef4b8d3fa5b76cd20482e007b97e",
+      "modified": false
+    },
+    "core/src/types.cpp": {
+      "source_sha256": "7389da3f273f1079cf3dfb612825dddd6df545d4b179076600825764f56c72e2",
+      "staged_sha256": "7389da3f273f1079cf3dfb612825dddd6df545d4b179076600825764f56c72e2",
+      "modified": false
+    },
+    "core/include/re2net/core/door_core.hpp": {
+      "source_sha256": "0c08711150eb6cb271d1aa51deff4e9af17640fa2789a095fd53aa2206c1ce57",
+      "staged_sha256": "0c08711150eb6cb271d1aa51deff4e9af17640fa2789a095fd53aa2206c1ce57",
+      "modified": false
+    },
+    "core/include/re2net/core/engine_bridge.hpp": {
+      "source_sha256": "47935c7b042890911cadbd9ccd0b6f9ed92da944005482feaf86d685758c7620",
+      "staged_sha256": "245407bb8a3b3f67118bab12cd11a408bbdcd6b7c14ac0edf1ebc2b114245aa7",
+      "modified": true,
+      "publication_delta": "Comments redacted; test_main.cpp also uses two explicitly invented boot fixture strings. Runtime tokens unchanged."
+    },
+    "core/include/re2net/core/messages.hpp": {
+      "source_sha256": "9f42d41bf941b783798b2278d2e14faa233b68649745a10bc53b2c51d46f82c6",
+      "staged_sha256": "9f42d41bf941b783798b2278d2e14faa233b68649745a10bc53b2c51d46f82c6",
+      "modified": false
+    },
+    "core/include/re2net/core/transport.hpp": {
+      "source_sha256": "38086404803ed2208860c892cad79b43dda05d5119b3c0029bc3a455a1102a05",
+      "staged_sha256": "38086404803ed2208860c892cad79b43dda05d5119b3c0029bc3a455a1102a05",
+      "modified": false
+    },
+    "core/include/re2net/core/types.hpp": {
+      "source_sha256": "8b9cdcaff3d1d88825ef8fc77e3d56c24db738a9aba21b65911e41edf60c28b4",
+      "staged_sha256": "8b9cdcaff3d1d88825ef8fc77e3d56c24db738a9aba21b65911e41edf60c28b4",
+      "modified": false
+    },
+    "adapter/reframework/channel_pump.hpp": {
+      "source_sha256": "edb542d70e2e7cf194377e7d18dea0c077e128cb8f9183f578ff6a68ae452eba",
+      "staged_sha256": "522518025f0608980bc9cfe80454813d37f1d269f0a460a7620fe3910496978b",
+      "modified": true,
+      "publication_delta": "Comments redacted; test_main.cpp also uses two explicitly invented boot fixture strings. Runtime tokens unchanged."
+    },
+    "adapter/reframework/pipe_transport.cpp": {
+      "source_sha256": "6ee6a42cd0051f399edee713882e8629a4df8275425c203704eeb9fbd7b32e25",
+      "staged_sha256": "6ee6a42cd0051f399edee713882e8629a4df8275425c203704eeb9fbd7b32e25",
+      "modified": false
+    },
+    "adapter/reframework/pipe_transport.hpp": {
+      "source_sha256": "ec96184c5fe8b897f427b057bc9f30af134b0241a5172c37bd01c2ce183375ca",
+      "staged_sha256": "ec96184c5fe8b897f427b057bc9f30af134b0241a5172c37bd01c2ce183375ca",
+      "modified": false
+    },
+    "adapter/reframework/plugin_main.cpp": {
+      "source_sha256": "fc2cb1be3785a7a86873e93ddb66467e6757cdad9ba79620bf0ae51578c37374",
+      "staged_sha256": "b36c0b88790c9bdd77290dfdc429b21bd0ee1bc2b0f55c1045d44a8898bf6df9",
+      "modified": true,
+      "publication_delta": "Comments redacted; test_main.cpp also uses two explicitly invented boot fixture strings. Runtime tokens unchanged."
+    },
+    "adapter/reframework/re_engine_bridge.cpp": {
+      "source_sha256": "e02cf8fc192e655dc3fe9b7f957aa3d751c09575e087429728fb76ad74eef2d6",
+      "staged_sha256": "fb9e0cade6eb2e10c68f094e2955dc6374838907c5fce118ade3d5c3d9368cff",
+      "modified": true,
+      "publication_delta": "Comments redacted; test_main.cpp also uses two explicitly invented boot fixture strings. Runtime tokens unchanged."
+    },
+    "adapter/reframework/re_engine_bridge.hpp": {
+      "source_sha256": "96ccb92241263fcf46b3fb76fcfa1817a7f75fa750b0b23656de2d8932731076",
+      "staged_sha256": "94b0d0270e3c853a380cd8c099c42fd996088f3be289de7cb25dec57e34a373f",
+      "modified": true,
+      "publication_delta": "Comments redacted; test_main.cpp also uses two explicitly invented boot fixture strings. Runtime tokens unchanged."
+    },
+    "tests/adapter_probe.cpp": {
+      "source_sha256": "99688bd764ff76906a8b27fedf4f6501e9dda0990a7039765b436bdd0f318060",
+      "staged_sha256": "d2186f9b7b916420a2c8558abb2242740bd83c1bba048a2746fddc14e879297f",
+      "modified": true,
+      "publication_delta": "Comments redacted; test_main.cpp also uses two explicitly invented boot fixture strings. Runtime tokens unchanged."
+    },
+    "tests/fakes.hpp": {
+      "source_sha256": "a59412779cdb6d7cbaff2c669a7b7f9b0eea250c2ba6e9e4318f0487212ce1b6",
+      "staged_sha256": "a59412779cdb6d7cbaff2c669a7b7f9b0eea250c2ba6e9e4318f0487212ce1b6",
+      "modified": false
+    },
+    "tests/test_adapter.cpp": {
+      "source_sha256": "73124a2cb227662c8728d7e7e6bf6b595302319d9cb767bc4682f918866f6f52",
+      "staged_sha256": "73124a2cb227662c8728d7e7e6bf6b595302319d9cb767bc4682f918866f6f52",
+      "modified": false
+    },
+    "tests/test_main.cpp": {
+      "source_sha256": "a329a622612bdd3ee3419a5c37ad2b0a010e119ae80984edf6418fc2f42ab588",
+      "staged_sha256": "2877ef177dd34e14a533206c40131a2ce4794683b1b72528b1fb396e590bcc7c",
+      "modified": true,
+      "publication_delta": "Comments redacted; test_main.cpp also uses two explicitly invented boot fixture strings. Runtime tokens unchanged."
+    },
+    "CMakeLists.txt": {
+      "source_sha256": "6f4828c01c08b1fe089a137c9e1a8adff1a5bfb750aa860eb7280171a45ee18c",
+      "staged_sha256": "6dbd8db6096229289f5266f5a9ff94458404b948a441d9e1ffc07eb9a49eef41",
+      "modified": true
+    },
+    "adapter/reframework/engine_callback.hpp": {
+      "source_sha256": "c02b4fd71861b25c86ad61a75bc7ebe9b64f13a91a75fcb900c6599146f08325",
+      "staged_sha256": "c02b4fd71861b25c86ad61a75bc7ebe9b64f13a91a75fcb900c6599146f08325",
+      "modified": false
+    }
+  },
+  "upstream_sources": {
+    "third_party/reframework/include/reframework/API.h": {
+      "sha256": "6417feddba2728e06bb04df94b20281713fd5aa328afa2bcb718a8b6dd357281",
+      "url": "https://raw.githubusercontent.com/praydog/REFramework/c4b1314820d20255febf7834903e8cedb669b49c/include/reframework/API.h"
+    },
+    "third_party/reframework/include/reframework/API.hpp": {
+      "sha256": "6f8a85a2a440c0d3c29d0829a52f85608f07478e8742804c7476ddc266bd6fe8",
+      "url": "https://raw.githubusercontent.com/praydog/REFramework/c4b1314820d20255febf7834903e8cedb669b49c/include/reframework/API.hpp"
+    },
+    "third_party/reframework/LICENSE": {
+      "sha256": "7124c298a1fe76b169db561ee640101f88f573f21d1f269b34817b9538321f5f",
+      "url": "https://raw.githubusercontent.com/praydog/REFramework/c4b1314820d20255febf7834903e8cedb669b49c/LICENSE"
+    }
+  },
+  "original_game_files_included": false,
+  "binary_files_included": false,
+  "license_grant_approved": true,
+  "signpath_approved": false,
+  "original_project_license": "MIT"
+}

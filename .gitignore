@@ -1,0 +1,8 @@
+/build/
+/.vs/
+*.user
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.lib
